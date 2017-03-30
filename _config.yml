@@ -1,0 +1,17 @@
+title: Mekyll theme demo
+email: 
+description: >
+  Mekyll - Medium-style theme for Jekyll
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ifedyukin.github.io" # the base hostname & protocol for your site
+postCount: 5 # the number of posts on the "index" page
+
+# Build settings
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+permalink   : /:year/:title/
+source: ./
+destination: ./_site
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
