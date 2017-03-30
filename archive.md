@@ -21,7 +21,7 @@ permalink: /archive/
     </ul></div>
       <div class="archive__block">
        <h2 class="archive__year" id="{{ next_year }}-ref">{{next_year}}</h2>
-       <ul>
+      <ul class="archive-list">
     {% endif %}
     {% endif %}
   {% endfor %}
