@@ -5,7 +5,6 @@
 
 #content strong {
   font-weight: bold;
-  font-size: 1.2em;
 }
 
 #content em {
@@ -19,8 +18,8 @@
 /* CODE */
 
 pre, code {
-  font-size: 13px;
-  font-family: Menlo, Monaco, "Andale Mono", serif;
+  font-size: 14px;
+  font-family: 'Inconsolata', monospace;
 }
 
 code {

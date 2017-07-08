@@ -1,14 +1,10 @@
 @import "reset.css";
 @import "syntax.css";
 @import "markdown.css";
-
-@font-face {
-  font-family: ubuntu;
-  src: url("../fonts/ubuntu.ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lora:400,400i,700,700i&subset=cyrillic');
 
 body {
-  font-family: ubuntu;
+  font-family: 'Lora', serif;
   letter-spacing: 0;
   font-weight: 400;
   font-style: normal;
@@ -100,7 +96,7 @@ body {
 
 .post__title {
   color: rgba(0, 0, 0, .8);
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .post__text {
@@ -173,7 +169,7 @@ body {
 .single__title {
   margin: 0;
   color: rgba(0, 0, 0, .8);
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .single__date {
@@ -187,9 +183,12 @@ body {
 }
 
 #footer {
-  width: 100%;
   text-align: center;
   margin: 15px;
+}
+
+#footer a {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 650px) {
