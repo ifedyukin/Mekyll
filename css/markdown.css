@@ -18,6 +18,7 @@
 /* CODE */
 
 pre, code {
+  text-indent: -2px;
   font-size: 14px;
   font-family: 'Inconsolata', monospace;
 }
