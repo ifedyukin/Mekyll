@@ -2,7 +2,7 @@ title: Mekyll theme demo
 email: 
 description: >
   Mekyll - Medium-style theme for Jekyll
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/Mekyll" # the subpath of your site, e.g. /blog
 url: "http://ifedyukin.github.io" # the base hostname & protocol for your site
 postCount: 5 # the number of posts on the "index" page
 
