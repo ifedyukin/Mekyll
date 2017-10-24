@@ -9,6 +9,8 @@ Medium style Jekyll theme.
 We are still developing this style theme. 
 If you want to get involved, simply:
 
-Fork the project and create a new branch
-Create an issue (optional)
-Raise a 'Pull Request' citing the issue (if any) with that branch to merge into this master branch!
+* Fork the project and create a new branch;
+* Create an issue (optional);
+* Raise a 'Pull Request' citing the issue (if any) with that branch to merge into this master branch!   
+
+You can offer any improvement to the theme - [Issue #3](https://github.com/ifedyukin/Mekyll/issues/3).
