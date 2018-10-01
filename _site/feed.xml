@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mekyll theme demo</title>
+    <description>Mekyll - Medium-style theme for Jekyll
+</description>
+    <link>http://localhost:4000/Mekyll/</link>
+    <atom:link href="http://localhost:4000/Mekyll/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 01 Oct 2018 21:24:52 +0300</pubDate>
+    <lastBuildDate>Mon, 01 Oct 2018 21:24:52 +0300</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Hacktoberfest 2018</title>
+        <description>&lt;p&gt;It&amp;#39;s very easy to make some words &lt;strong&gt;bold&lt;/strong&gt; and other words &lt;em&gt;italic&lt;/em&gt; with Markdown. You can even &lt;a href=&quot;http://google.com&quot;&gt;link to Google!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes you want numbered lists:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;One&lt;/li&gt;
+&lt;li&gt;Two&lt;/li&gt;
+&lt;li&gt;Three&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Sometimes you want bullet points:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start a line with a star&lt;/li&gt;
+&lt;li&gt;Profit!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Alternatively,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dashes work just as well&lt;/li&gt;
+&lt;li&gt;And if you have sub points, put two spaces before the dash or star:
+
+&lt;ul&gt;
+&lt;li&gt;Like this&lt;/li&gt;
+&lt;li&gt;And this&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to embed images, this is how you do it:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://octodex.github.com/images/yaktocat.png&quot; alt=&quot;Image of Yaktocat&quot;&gt;&lt;/p&gt;
+
+&lt;h1&gt;Structured documents&lt;/h1&gt;
+
+&lt;p&gt;Sometimes it&amp;#39;s useful to have different levels of headings to structure your documents. Start lines with a &lt;code&gt;#&lt;/code&gt; to create headings. Multiple &lt;code&gt;##&lt;/code&gt; in a row denote smaller heading sizes.&lt;/p&gt;
+
+&lt;h3&gt;This is a third-tier heading&lt;/h3&gt;
+
+&lt;p&gt;You can use one &lt;code&gt;#&lt;/code&gt; all the way up to &lt;code&gt;######&lt;/code&gt; six for different heading sizes.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;d like to quote someone, use the &amp;gt; character before the line:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Coffee. The finest organic suspension ever devised... I beat the Borg with it.
+- Captain Janeway&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are many different ways to style code with GitHub&amp;#39;s markdown. If you have inline code blocks, wrap them in backticks: &lt;code&gt;var example = true&lt;/code&gt;.  If you&amp;#39;ve got a longer block of code, you can indent with four spaces:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;if (isAwesome){
+  return true
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;GitHub also supports something called code fencing, which allows for multiple lines without indentation:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;if (isAwesome){
+  return true
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And if you&amp;#39;d like to use syntax highlighting, include the language:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isAwesome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        <pubDate>Mon, 01 Oct 2018 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/Mekyll/2018/Test/</link>
+        <guid isPermaLink="true">http://localhost:4000/Mekyll/2018/Test/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Test</title>
+        <description>&lt;p&gt;It&amp;#39;s very easy to make some words &lt;strong&gt;bold&lt;/strong&gt; and other words &lt;em&gt;italic&lt;/em&gt; with Markdown. You can even &lt;a href=&quot;http://google.com&quot;&gt;link to Google!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes you want numbered lists:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;One&lt;/li&gt;
+&lt;li&gt;Two&lt;/li&gt;
+&lt;li&gt;Three&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Sometimes you want bullet points:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start a line with a star&lt;/li&gt;
+&lt;li&gt;Profit!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Alternatively,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dashes work just as well&lt;/li&gt;
+&lt;li&gt;And if you have sub points, put two spaces before the dash or star:
+
+&lt;ul&gt;
+&lt;li&gt;Like this&lt;/li&gt;
+&lt;li&gt;And this&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to embed images, this is how you do it:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://octodex.github.com/images/yaktocat.png&quot; alt=&quot;Image of Yaktocat&quot;&gt;&lt;/p&gt;
+
+&lt;h1&gt;Structured documents&lt;/h1&gt;
+
+&lt;p&gt;Sometimes it&amp;#39;s useful to have different levels of headings to structure your documents. Start lines with a &lt;code&gt;#&lt;/code&gt; to create headings. Multiple &lt;code&gt;##&lt;/code&gt; in a row denote smaller heading sizes.&lt;/p&gt;
+
+&lt;h3&gt;This is a third-tier heading&lt;/h3&gt;
+
+&lt;p&gt;You can use one &lt;code&gt;#&lt;/code&gt; all the way up to &lt;code&gt;######&lt;/code&gt; six for different heading sizes.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;d like to quote someone, use the &amp;gt; character before the line:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Coffee. The finest organic suspension ever devised... I beat the Borg with it.
+- Captain Janeway&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are many different ways to style code with GitHub&amp;#39;s markdown. If you have inline code blocks, wrap them in backticks: &lt;code&gt;var example = true&lt;/code&gt;.  If you&amp;#39;ve got a longer block of code, you can indent with four spaces:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;if (isAwesome){
+  return true
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;GitHub also supports something called code fencing, which allows for multiple lines without indentation:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;if (isAwesome){
+  return true
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And if you&amp;#39;d like to use syntax highlighting, include the language:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isAwesome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        <pubDate>Thu, 30 Mar 2017 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/Mekyll/2017/Test/</link>
+        <guid isPermaLink="true">http://localhost:4000/Mekyll/2017/Test/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

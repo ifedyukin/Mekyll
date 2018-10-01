@@ -6,9 +6,10 @@
       <img src="{{ site.baseurl }}/images/avatar.png" alt="avatar">
     </div>
     <ul id="header__nav">
-      <li><a href="{{ site.baseurl }}/">Main</a></li>
-      <li><a href="{{ site.baseurl }}/about">About</a></li>
-      <li><a href="{{ site.baseurl }}/archive">Archive</a></li>
+      <li><a href="{{ site.baseurl }}/" class="{% if page.url == '/' %}active__link{% else %}{% endif %}">Main</a>
+      </li>
+      <li><a href="{{ site.baseurl }}/about" class="{% if page.url == '/about/' %}active__link{% else %}{% endif %}">About</a></li>
+      <li><a href="{{ site.baseurl }}/archive" class="{% if page.url == '/archive/' %}active__link{% else %}{% endif %}">Archive</a></li>
     </ul>
   </div>
 </div>
