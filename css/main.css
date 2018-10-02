@@ -202,7 +202,7 @@ body {
 }
 
 .single__article {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .single__article:first-letter {
@@ -213,7 +213,7 @@ body {
 }
 
 #single p {
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
 #footer {
