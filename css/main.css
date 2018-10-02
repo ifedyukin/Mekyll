@@ -16,6 +16,9 @@ body {
     height: 100%;
     background-color: #FAFAFA;
 }
+body * {
+    transition: all 0.3s ease;
+}
 
 #header {
     width: 100%;
@@ -148,6 +151,9 @@ body {
 
 .post__postfix a:hover {
     color: rgba(0, 0, 0, .6);
+}
+.streamItemHeading a:hover > span {
+    color: rgba(0, 0, 0, .84) !important;
 }
 
 .more_posts {
