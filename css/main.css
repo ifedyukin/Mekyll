@@ -38,6 +38,12 @@ body {
     margin: -12px auto;
     padding-top: 42px;
 }
+#container .extremeHero-container {
+    max-width: 1032px;
+}
+#container .extremeHero-postContent {
+    margin-left: 0;
+}
 
 #header__info h1 {
     margin-left: 7px;
