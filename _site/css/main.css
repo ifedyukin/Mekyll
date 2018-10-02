@@ -201,8 +201,19 @@ body {
     color: rgba(0, 0, 0, .44);
 }
 
+.single__article {
+    padding-top: 10px;
+}
+
+.single__article:first-letter {
+    float: left;
+    font-size: 4.5em;
+    line-height: 30px;
+    padding: 0 8px 0 0;
+}
+
 #single p {
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
 #footer {
