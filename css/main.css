@@ -192,6 +192,13 @@ body * {
     color: rgba(0, 0, 0, .8);
     font-size: 1.8em;
 }
+#container .streamItem > .extremePostPreview {
+    padding: 10px;
+    margin-bottom: 30px !important;
+}
+#container .streamItem > .extremePostPreview:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
 
 #single {
     background-color: #FFFFFF;
