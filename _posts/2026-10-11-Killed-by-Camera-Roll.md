@@ -97,7 +97,7 @@ Lens ID                         : iPhone 13 Pro Max back triple camera 5.7mm f/1
 Even excluding some of the output, that is quite a lot of information. So what pieces of information would a person or nation state be after specifically? I'm sure you've noticed some important things already, let's go over them:
 
 - **Host Computer**: I now know this image was created on my sister's iPhone 13 Pro Max.
-- **Exposure time, F number, and and ISO**: With a 1/99 shutter speed, 1.5 aperture, and 125 ISO, I can assume this image was taken in a low light setting.
+- **Exposure time, F number, and ISO**: With a 1/99 shutter speed, 1.5 aperture, and 125 ISO, I can assume this image was taken in a low light setting.
 - **Run Time Since Power Up**: Interestingly enough, the HEIC format will record how long your phone has been running since you last powered it on. My sister's phone was running for exactly 7 days, 13 hours, 54 minutes and 29 seconds.
 - **Create Date**: This picture was taken at exactly at 9 seconds past 7:45PM Eastern on August 19th, 2023. The time of day validates the assumption made from the camera settings above.
 - **GPS Altitude**: I know that the iPhone was at *some* level of altitude. The reason I say "some" is because I was pretty sure I was higher than 30 feet above sea level in that picture. I've been wrong before though.
