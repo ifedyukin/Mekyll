@@ -2,6 +2,7 @@
 layout: post
 title: "Journey to OSCP"
 date: 2026-01-07
+description: My complete timeline of going from zero-to-hero for OSCP.
 tags:
   - cert
 ---

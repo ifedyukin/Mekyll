@@ -2,6 +2,7 @@
 layout: post
 title: "How to Get Killed by Your Camera Roll"
 date: 2026-10-11
+description: A real-world example of viewing metadata with exiftool.
 tags:
   - digital-forensics
 ---

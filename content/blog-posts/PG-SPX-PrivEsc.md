@@ -2,6 +2,7 @@
 layout: post
 title: "Proving Grounds SPX: Privilege Escalation"
 date: 2025-07-07
+description: A privilege escalation case study of the SPX Proving Grounds machine.
 tags:
   - ctf
   - privesc

@@ -227,7 +227,7 @@ plugins:
     options:
       links:
         LinkedIn: https://www.linkedin.com/in/grant-trowbridge-091945198/
-        GitHub: https://github.com/jackyzha0/quartz
+        GitHub: https://github.com/grant-trowbridge
     layout:
       position: footer
       priority: 50
