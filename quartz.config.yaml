@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Grant Trowbridge's Blog
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: Orbitron
+      body: JetBrains Mono
+      code: Google Sans Code
     colors:
       lightMode:
         light: "#faf8f8"
@@ -99,7 +99,7 @@ plugins:
     enabled: false
     order: 92
   - source: "@quartz-community/quartz-fonts"
-    enabled: true
+    enabled: false
   - source: "@quartz-themes/core"
     enabled: false
     options:
@@ -155,8 +155,8 @@ plugins:
   - source: "@quartz-community/search"
     enabled: true
     layout:
-      position: left
-      priority: 20
+      position: header
+      priority: 15
       group: toolbar
       groupOptions:
         grow: true
@@ -188,14 +188,14 @@ plugins:
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
-      position: left
-      priority: 30
+      position: header
+      priority: 20
       group: toolbar
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
-      position: left
-      priority: 35
+      position: header
+      priority: 20
       group: toolbar
   - source: "@quartz-community/breadcrumbs"
     enabled: true
@@ -204,7 +204,7 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: true
+    enabled: false
     options:
       provider: giscus
       options:
@@ -226,18 +226,19 @@ plugins:
     enabled: true
     options:
       links:
+        LinkedIn: https://www.linkedin.com/in/grant-trowbridge-091945198/
         GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
     layout:
       position: footer
       priority: 50
   - source: "@quartz-community/recent-notes"
     enabled: true
+    priority: 50
     options:
       title: Recent Notes
-      limit: 5
+      limit: 3
       linkToMore: false
-      showTags: true
+      showTags: false
     layout:
       position: left
       priority: 25

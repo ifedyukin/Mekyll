@@ -2,6 +2,8 @@
 layout: post
 title: "How to Get Killed by Your Camera Roll"
 date: 2026-10-11
+tags:
+  - digital-forensics
 ---
 
 At some point in your life you've heard the word "metadata" in the news. But what is it exactly? Who would want your metadata? And why should you care? In this blog post, I will be using a real-life photo as an example of what kind of data can be extracted from your camera roll. The photo is from a Tyler Childers concert I attended with my sister back in 2023 (and we'll be able to confirm this further down).
@@ -24,7 +26,7 @@ What often surprises people is how much OSINT (Open Source Intelligence) is used
 
 Here is the original photo we took at the concert that I converted to jpg format:
 
-![Exif Example](/assets/img/exif-example.jpg)
+![[Killed-by-Camera-Roll_exif-example.jpg]]
 
 To download `exiftool`, use your distro-specific package manager if you are on Linux. For Windows, navigate to the official [exiftool page](https://exiftool.org/) and select the Windows 32-bit or 64-bit download options. You will be linked to a SourceForge download which *did* give me a heart attack at first, but the download is legit. After the tool is installed on your local machine, you can view the metadata of a specific file by providing it as a positional argument:
 
@@ -108,9 +110,9 @@ Even excluding some of the output, that is quite a lot of information. So what p
 
 The GPS data in the images metadata is denoted in Degrees, Minutes, and Seconds (DMS) by default. In order to view these coordinates in Google Maps, we'll need to convert them to Decimal Degrees (DD) format. I found [this site](https://www.latlong.net/degrees-minutes-seconds-to-decimal-degrees) that performs the conversion automatically. When I enter my coordinates, I get the decimal degrees `32.86138889, -79.90409722`. All that's left to do is head to [Google Maps](https://maps.google.com) and enter the coordinates. The most shocking part is how accurate the coordinates being recorded are. Google Maps places me at the exact seat I had at the Credit One Stadium on Daniel Island. This also validates the exact viewing angle shown in the picture too:
 
-![Exif GPS Location 1](/assets/img/exif-gps-location-1.jpg)
+![[Killed-by-Camera-Roll_exif-gps-location-1.jpg]]
 
-![Exif GPS Location 2](/assets/img/exif-gps-location-2.jpg)
+![[Killed-by-Camera-Roll_exif-gps-location-2.jpg]]
 
 ## Removing GPS Metadata
 
@@ -130,7 +132,7 @@ Warning: ICC_Profile deleted. Image colors may be affected - ./IMG_3211.HEIC
     1 image files updated
 ```
 
-![Exif Rotated](/assets/img/exif-rotated.jpg)
+![[Killed-by-Camera-Roll_exif-rotated.jpg]]
 
 That's no good. To fix this, let's first note the value of the `Orientation` field before we remove any metadata:
 
@@ -159,7 +161,7 @@ PS C:\Users\XXX\Downloads\exiftool-13.59_64\exiftool-13.59_64> .\exiftool.exe -E
 
 Much better:
 
-![Exif Fixed](/assets/img/exif-fixed.jpg)
+![[Killed-by-Camera-Roll_exif-fixed.jpg]]
 
 # Mitigations
 

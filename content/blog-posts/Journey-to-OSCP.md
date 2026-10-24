@@ -256,7 +256,7 @@ I like to contain my table of contents in a callout. This can be done by highlig
 > 	- [[#Ligolo-NG Agent]]
 ```
 
-![table of contents](/assets/img/journey-to-OSCP-table-of-contents.png)
+![[journey-to-OSCP-table-of-contents.jpg]]
 
 ## Returning to the OffSec Labs
 
@@ -264,9 +264,10 @@ With the Proving Grounds list *finally* completed, the only thing I felt was lef
 
 # The 4th and Final Attempt
 
+> [!Quote]
 > A man reaps what he sows.
-
-> - Galatians 6:7 NIV
+> 
+> **Galatians 6:7 NIV**
 
 At 08:00 the exam kicked off. I immediately focused on Active Directory using the assumed breach credentials, added to the official exam on November 1st, 2024. Enumerating the intended privilege escalation vector took around one hour, and a little bit longer for actual exploitation after going down some Microsoft Learn documentation rabbit holes. After recovering from the rabbit hole, I had my first admin shell on the AD set in about 2 hours! 10/100 points so far. Next, I focused on pivoting to the first internal machine, but nothing seemed to be working properly. I began to toil and fall back into my old habit of re-attempting the same solutions *over* and *over* and *over* again. I was able to recognize this desperation and decided to break for lunch around 12:00. I used this time away to really think about what I've attempted so far, and what I may be overlooking.
 
@@ -274,7 +275,7 @@ When I sat back down, I decided to switch gears and attack a standalone Linux ma
 
 I shifted focus back to the AD set and re-tried some previous attempts as a sanity check, and then it hit me. Using the troubleshooting skills I've learned on the job, my assumption was correct. I resolved the networking issue and I had my pivot up and running to the first internal machine! I audibly exhaled. I nearly convinced myself I was going to fail again, but not this time.
 
-Using the new pivot, I logged into the internal machine and sent a fully interactive reverse shell to my Kali machine in that user context (you read my [Invoke-ConPtyShell](https://grant-trowbridge.github.io/2025/When-Shells-Stabilize/) post, right?). From here, I rinsed and repeated my privilege escalation enumeration, spawning a system shell in about 30 minutes. This puts my total at 30/100. After some post-exploit enumeration on the internal machine, I was able to gather sensitive domain credentials. I crossed my fingers in hopes it was what I needed and...
+Using the new pivot, I logged into the internal machine and sent a fully interactive reverse shell to my Kali machine in that user context (you read my [[When-Shells-Stabilize|Invoke-ConPtyShell]] post, right?). From here, I rinsed and repeated my privilege escalation enumeration, spawning a system shell in about 30 minutes. This puts my total at 30/100. After some post-exploit enumeration on the internal machine, I was able to gather sensitive domain credentials. I crossed my fingers in hopes it was what I needed and...
 
 **DOMAIN ADMIN!!!** This was the first time I had seen all three AD flags submitted in the portal and the feeling was amazing. 50 points down, 20 to go.
 
@@ -286,7 +287,7 @@ Once my exam ended at 07:45AM the next day, I spent another few hours meticulous
 
 I spent the ensuing days trying to keep my mind from running, wondering if I had missed some small detail that would send me back to the labs for more practice. While I was talking with my family on the phone, I saw the email hit my inbox. I officially received passing confirmation that following Tuesday. **OSCP is complete!**
 
-![OSCP Email](/assets/img/Journey-to-OSCP-Email.png)
+![[Journey-to-OSCP-Email.jpg]]
 
 # Closing Thoughts
 
@@ -296,4 +297,5 @@ While my current job is defensive in nature, understanding the mindset of an att
 
 OSCP has not only validated my understanding and knowledge of offensive security TTPs, it has cemented the "try harder" mindset the community often espouses. This work ethic will carry over into my day-to-day work in Cyber Security, and I look forward to using everything I have learned to continue securing the Department of The Navy.
 
-> "Non sibi sed patriae."
+> [!Quote]
+> Non sibi sed patriae.

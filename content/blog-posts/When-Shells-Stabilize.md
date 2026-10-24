@@ -2,6 +2,8 @@
 layout: post
 title: "When Shells Stabilize: Spawning Fully Interactive Windows Shells with Invoke-ConPtyShell"
 date: 2025-09-09
+tags:
+  - windows
 ---
 
 Picture this. You're in a good workflow on a Windows target, you even added line editing and command history with `rlwrap`. Then it happens, you accidentally start a program in the foreground... Instinctively, you press `Ctrl + C` in your `nc` Windows shell, killing your shell access along with the program. Not ideal, and very frustrating.
